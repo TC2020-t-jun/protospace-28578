@@ -30,7 +30,3 @@
 | concept    | text   | null: false |
 | image      |        |             |
 | user       | references | null: false |
-
-#------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
