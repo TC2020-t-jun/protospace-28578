@@ -18,20 +18,20 @@
 | Column     | Type   | Options     |
 | ---------- | ------ | ----------- |
 | text       | text   | null: false |
-| user       | references |         |
-| prototype  | references |         |
+| user       | references | null: false |
+| prototype  | references | null: false |
 
+## prototypes テーブル
 
-## rooms テーブル
+| Column     | Type   | Options     |
+| ---------- | ------ | ----------- |
+| title      | string | null: false |
+| catch_copy | text   | null: false |
+| concept    | text   | null: false |
+| image      |        |             |
+| user       | references | null: false |
 
-| Column | Type   | Options     |
-| ------ | ------ | ----------- |
-| name   | string | null: false |
-
-## room_users テーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
+#------------------------------ |
 | user   | references | null: false, foreign_key: true |
 | room   | references | null: false, foreign_key: true |
 
@@ -40,5 +40,3 @@
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
 | content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
