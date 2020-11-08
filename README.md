@@ -18,8 +18,8 @@
 | Column     | Type   | Options     |
 | ---------- | ------ | ----------- |
 | text       | text   | null: false |
-| user       | references | null: false |
-| prototype  | references | null: false |
+| user       | references | null: false, foreign_key: true |
+| prototype  | references | null: false, foreign_key: true |
 
 ## prototypes テーブル
 
@@ -29,4 +29,4 @@
 | catch_copy | text   | null: false |
 | concept    | text   | null: false |
 | image      |        |             |
-| user       | references | null: false |
+| user       | references | null: false, foreign_key: true |
